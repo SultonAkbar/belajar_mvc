@@ -1,3 +1,3 @@
 <?php
 
-define('BASEURL', 'http://localhost/bismillah_mvc/public/');
+define('BASEURL', 'http://localhost/belajar_mvc/public/');

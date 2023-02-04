@@ -1,5 +1,5 @@
 <?php
-class User_model
+class Mahasiswa_model
 {
     private $mhs = [
         [
@@ -58,4 +58,9 @@ class User_model
             "email" => "arikasu@gmail.com",
         ]
     ];
+
+    public function getAllMahasiswa()
+    {
+        return $this->mhs;
+    }
 }
