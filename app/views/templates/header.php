@@ -25,7 +25,7 @@
                     <a class="nav-link" href="<?= BASEURL; ?>mahasiswa">Mahasiswa </a>
                 </li>
                 <li class="nav-item ms-4 ">
-                    <a class="nav-link" href="<?= BASEURL; ?>about">Page</a>
+                    <a class="nav-link" href="<?= BASEURL; ?>about">About</a>
                 </li>
             </ul>
         </div>
