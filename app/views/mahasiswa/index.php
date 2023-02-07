@@ -26,12 +26,12 @@
                 <h1 class="modal-title fs-5" id="judulModal">Tambah Data Mahasiswa</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form action="<?= BASEURL; ?>mahasiswa/tambah" method="post">
-                <div class="modal-body">
+            <div class="modal-body">
+                <form action="<?= BASEURL; ?>mahasiswa/tambah" method="post">
                     <div class="wrapper d-block my-3">
                         <label class="mb-2" for="">Masukkan Gambar</label>
                         <div class="input-group mb-3">
-                            <input type="file" class="form-control" id="gambar">
+                            <input type="file" class="form-control" name="gambar" id="gambar">
                         </div>
                     </div>
                     <div class="form-group mb-3">
@@ -49,21 +49,20 @@
                     <div class="wrapper d-block my-3">
                         <label class="mb-2" for="jurusan">Pilih Jurusan</label>
                         <div class="input-group mb-3">
-                            <select class="form-select" id="jurusan">
-                                <option selected>Choose...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                            <select class="form-select" name="jurusan">
+                                <option selected>Pilih Jurusan</option>
+                                <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+                                <option value="Multimedia">Multimedia</option>
+                                <option value="DPIB">DPIB</option>
                             </select>
                         </div>
                     </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
-                    <button type="button" class="btn btn-primary">Tambah Data</button>
-                </div>
-            </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+                <button type="submit" class="btn btn-primary">Tambah Data</button>
+                </form>
+            </div>
         </div>
     </div>
 </div>
