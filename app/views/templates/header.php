@@ -11,7 +11,7 @@
 
 <body>
 
-    <div class="navbar navbar-expand-lg justify-content-beetwen bg-success-subtle">
+    <div class="navbar navbar-expand-lg justify-content-beetwen bg-primary-subtle">
         <div class="container">
             <a class="navbar-brand fs-3" href="<?= BASEURL; ?>">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
