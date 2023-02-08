@@ -25,18 +25,14 @@ class Mahasiswa_model
 
     public function tambahDataMahasiswa($data)
     {
-        $query = "INSERT INTO mahasiswa (`nama`, `NIS`, `email`, `jurusan`) Values (:nama, :NIS, :email, :jurusan)";
+        $query = "INSERT INTO mahasiswa (`nama`, `NIS`, `email`, `jurusan`, `gambar`) Values (:nama, :NIS, :email, :jurusan, :gambar)";
 
         $this->db->query($query);
         $this->db->bind('nama', $data['nama']);
         $this->db->bind('NIS', $data['NIS']);
         $this->db->bind('email', $data['email']);
         $this->db->bind('jurusan', $data['jurusan']);
-
-        var_dump($data['nama']);
-
-        var_dump($data['jurusan']);
-        die;
+        $this->db->bind('gambar', $data['gambar']);
 
         $this->db->execute();
 
